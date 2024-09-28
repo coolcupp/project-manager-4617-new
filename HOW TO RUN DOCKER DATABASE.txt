@@ -1,0 +1,8 @@
+1. В корне проекта cmd
+2. docker-compose up -d
+3. Проверим: docker ps
+4. Войдем в докер контейнер: docker exec -it project-manager-4617-new-postgres-1 bash
+5. psql -h <IP_контейнера>(Запущено на localhost обычно, т.е. писать localhost) -p 5432 -U postgres(пользователь) -d new_prManager_db1(имя БД)
+6. \dt - посмотреть список таблиц в БД 
+7. Писать запросы(example: SELECT * FROM users;)
+     
